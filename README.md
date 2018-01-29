@@ -59,13 +59,13 @@ Quand tu t'es loggé, **Controller** a traité ton action, et l'a indiqué au **
 
 Les Routes, c'est ce qui va permettre à ton Controller de faire ce que tu lui dis de faire.
 
-Imagine, tu as créer un blog et tu souhaite publié ton premier article. Heureusement pour toi, il y un joli bouton sur lequel cliquer pour pouvoir le faire. Quand tu cliques sur ce bouton, son URL va être interprété par une **Route**, et orienter l'ordre que tu viens de donner vers l'action du Controller correspondante (créer un article), tel que *show, create, destroy, edit, new, index, et update*.
+Imagine, tu as créer un blog et tu souhaite publier ton premier article. Heureusement pour toi, il y a un joli bouton sur lequel cliquer pour pouvoir le faire. Quand tu cliques sur ce bouton, son URL va être interprété par une **Route**, et orienter l'ordre que tu viens de donner vers l'action du Controller correspondante (créer un article), tel que *show, create, destroy, edit, new, index*, et *update*.
 
 ## Les bases de données
 
 Comme on a pu le lire un peu plus haut, la responsabilité du **Model** c'est de contenir des données. Toujours les mêmes ? Non ! Car le **Controller** peut être amené à les modifier en fonctions de tes volontés de tyran.
 
-Mais alors où vont aller les données contenues dans le **Model**, et d'où vont venir celles qui vont êtres appelées. Et bien des bases de données malheureux !
+Mais alors où vont aller les données contenues dans le **Model**, et d'où vont venir celles qui vont être appelées. Et bien des bases de données malheureux !
 
 Ces bases de données vont être organisées sous formes de tables, et en général toutes ces tables ont une clé commune (identifiant unique) pour pouvoir intéragir ensemble.
 
@@ -92,16 +92,17 @@ Et donc Anthony Kerlizou, il mesure 6 pieds 2 pouces, a 28 ans, et pèse 172 liv
 
 Dans rails une *Route* dont on a déterminé les ressources (point de départ, point d'arrivée) entre des méthodes appellées verbes HTTP d'une part (en gros des requêtes qui déterminent les actions à réaliser sur une ressource donnée), et les URL d'autre part.
 
-Par convention, chaque action et aussi liée à une opération CRUD spécifique (*Create, Read, Update, Delete*) appliquée à la base de donnée.
+Par convention, chaque action est aussi liée à une opération CRUD spécifique (*Create, Read, Update, Delete*) appliquée à la base de donnée.
 
-Pour en revenir à nos moutons que sont GET et PUSH, et bien ce sont tous deux des *verbes HTTP* donc des requêtes qui déterminent des actions à réaliser sur une ressource determinée (données de la base de de donnée).
+Pour en revenir à nos moutons que sont **GET** et **POST**, et bien ce sont tous deux des *verbes HTTP* donc des **requêtes qui déterminent des actions à réaliser sur une ressource determinée** (données de la base de de donnée).
 
-**GET** permet d'aller chercher de la donnée dans la base de données
+**GET** permet d'aller chercher de la donnée dans la base de données.
+
 **POST** permet créer de la donnée dans la base de donnée.
 
 ## Migration
 
-Le concept de **Migration** est là pour te permettre de **structurer et d'organiser ta base de donnée**. Mais aussi, et c'est important, **d'enregistrer tes actions (défini un historique)** ou celles d'autres developers sur la base de données.
+Le concept de **Migration** est là pour te permettre de **structurer et d'organiser ta base de donnée**. Mais aussi, et c'est important, **d'enregistrer tes actions (historique)** ou celles d'autres *developpers* sur la base de données.
 
 ## Les relations entre les Models des BDD
 
