@@ -1,6 +1,6 @@
-# Rails ??? Oh Rails ! Where is that ?
+# <span style="color: #fb4141">Rails</span> ??? Oh <span style="color: #fb4141">Rails</span> ! Where is that ?
 
-Ma mission si je l'accepte (et a priori tel est le cas), c'est de t'expliquer ce qu'est Rails. Plutôt cool non ?
+Ma mission si je l'accepte (et a priori tel est le cas :ok_hand:), c'est de t'expliquer ce qu'est Rails. Plutôt cool non ?
 
 Bon commençons par le début :
 
@@ -27,7 +27,8 @@ Prenons un exemple, http://www.bzhecume.com/surflog/
 
 Si tu surf, et qui plus est en Bretagne, bzhecume c'est un peu "légende". Pourquoi ? Parce que sur ce site, tu vas retrouver un forum de discussions autour du surf et tout ce qui y attrait, un surf check où tu retrouveras le report du jour pour checker à distance les conditions du jour de ton spot ou bien les poster, les commenter etc., des petites annonces et patatipatata.
 
-**Ce qui est important de retenir ici**, c'est que sur site, tu peux consulter toutes les pages sans t'être préalablement enregistré comme *utilisateur*. Mais que si tu le fais, et que tu te *log*, tu pourras alors toi aussi participer aux discussions, poster les photos de tes sessions, commenter un report, ou encore y vendre ta vieille combar usagée qui sent la marée:trollface:.
+**Ce qui est important de retenir ici**, c'est que sur site, tu peux consulter toutes les pages sans t'être préalablement enregistré comme *utilisateur*. Mais que si tu le fais, et que tu te *log*, tu pourras alors toi aussi participer aux discussions, poster les photos de tes sessions, commenter un report, ou encore y vendre ta vieille combar usagée qui sent la marée :trollface:.
+
 **Donc faire évoluer ce site.**
 
 ## Le :sparkles:*Model View Controller*:sparkles: Késako ?
@@ -96,7 +97,7 @@ Pour en revenir à nos moutons que sont GET et PUSH, et bien ce sont tous deux d
 
 ## Migration
 
-Le concept de **Migration** est là pour te permettre de *structurer et d'organiser ta base de donnée*. Mais aussi, et c'est important, *d'enregistrer tes actions* ou celles d'autres developers sur la base de données.
+Le concept de **Migration** est là pour te permettre de **structurer et d'organiser ta base de donnée**. Mais aussi, et c'est important, **d'enregistrer tes actions (défini un historique)** ou celles d'autres developers sur la base de données.
 
 ## Les relations entre les Models des BDD
 
@@ -119,9 +120,9 @@ et perso je vous invite à lire la [doc Ruby](http://guides.rubyonrails.org/asso
 
 ## Les fonctions du CRUD
 On l'a vu, **CRUD** c'est l'acronyme de :
-**C** reate, qui permet de créer un nouvel enregistrement (`POST:/{resources}`);
-**R** ead, pour afficher un ou plusieurs enregistrements, (`GET:/{resources}` et `GET:/{resources}/:id`)
-**U** pdate, pour mettre à jour un enregistrement (`PUT:/{resources}/:id`)
-**D** elete, pour supprimer un enregistrement (`DELETE:/{resources}/:id`)
+* **C** reate, qui permet de créer un nouvel enregistrement (`POST:/{resources}`);
+* **R** ead, pour afficher un ou plusieurs enregistrements, (`GET:/{resources}` et `GET:/{resources}/:id`)
+* **U** pdate, pour mettre à jour un enregistrement (`PUT:/{resources}/:id`)
+* **D** elete, pour supprimer un enregistrement (`DELETE:/{resources}/:id`)
 
 Ce sont donc les **4 fonctions de base pour gérer une base de données**.
