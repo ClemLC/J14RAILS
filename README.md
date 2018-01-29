@@ -40,7 +40,7 @@ Ok, bon regardons ça de plus près.
 
 Le MVC est un motif composé de trois modules différents : **Model - View - Controller**
 
-Et aucuns de ces trois là n'ont la même responsabilité.
+Et aucuns de ces trois-là n'a la même responsabilité.
 
 * La responsabilité du **Model** c'est de contenir les données à afficher;
 * Celle de **View** est de contenir la présentation de l'interface graphique (ce qui apparaît à l'écran);
