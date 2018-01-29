@@ -69,17 +69,19 @@ Ces bases de données vont être organisées sous formes de tables, et en géné
 
 Exemple : tu as une table Users (id, firstname, lastname), et une autre Users_private_informations (id, size, age, weight).  Si tu veux savoir les données privées d'un utilisateur c'est grâce à l'id qui lui est attribué quelles seront retrouvées.
 
-**Table_Users** :
-ID |firstname|lastname
----|---------|--------
-1 |Anthony|Kerlizou
-2|Manon|Du Faouët
+* **Table_Users** :
 
-**Table_Users_private_informations**
-ID|size|age|weight
---|----|---|------
-1|6'2"|28|172
-2|5'6"|27|123
+ID      |firstname      |lastname     
+--------|---------------|--------
+1       |Anthony        |Kerlizou
+2       |Manon          |Du Faouët
+
+* **Table_Users_private_informations** :
+
+ID      |size     |age      |weight     
+--------|---------|---------|------
+1       |6'2"     |28       |172
+2       |5'6"     |27       |123
 
 Et donc Anthony Kerlizou, il mesure 6 pieds 2 pouces, a 28 ans, et pèse 172 livres.
 
@@ -101,11 +103,11 @@ Le concept de **Migration** est là pour te permettre de **structurer et d'organ
 
 ## Les relations entre les Models des BDD
 
-Comme vu au-dessus (Cf. Les bases de données / BDD), les BDD sont associées entre elle par des **Cardinalités**.
+Comme vu au-dessus (Cf. Les bases de données / BDD), les BDD sont associées entre elle par des **Associations**.
 
 Les **Models** quant à eux ont pour rôles de contenir la données qu'on leur a demandé de contenir issue d'une table de donnée déterminée. Mais en fonctions de nos actions, nous allons être amenés à faire évoluer ce contenu en consultant des données figurant dans une autre table de données.
 
-Pour ce faire, nos **Models** vont faire appel aux **Cardinalités** ou **Associations** (à prononcer avec l'accent anglais) afin de pouvoir intéragir entre les différentes tables de données existantes.
+Pour ce faire, nos **Models** vont faire appel aux **Associations** (à prononcer avec l'accent anglais) ou **Cardinalités** (en bon françois)  afin de pouvoir intéragir entre les différentes tables de données existantes.
 
 Celles-ci sont les suivantes :
 
