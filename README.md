@@ -1,6 +1,6 @@
 # <span style="color: #fb4141">Rails</span> ??? Oh <span style="color: #fb4141">Rails</span> ! Where is that ?
 
-Ma mission si je l'accepte (et a priori tel est le cas :ok_hand:), c'est de t'expliquer ce qu'est Rails. Plutôt cool non ?
+Ma mission si je l'accepte (et a priori tel est le cas :ok_hand:), c'est de comprendre et de t'expliquer quelques fondamentaux qui vont nous être utiles pour la suite du programme. Plutôt cool non ?
 
 Bon commençons par le début :
 
@@ -128,3 +128,5 @@ On l'a vu, **CRUD** c'est l'acronyme de :
 * **D** elete, pour supprimer un enregistrement (`DELETE:/{resources}/:id`)
 
 Ce sont donc les **4 fonctions de base pour gérer une base de données**.
+
+# TRAVAIL ASSIS, TRAVAIL PRECIS !
