@@ -66,7 +66,7 @@ Mais alors où vont aller les données contenues dans le **Model**, et d'où von
 
 Ces bases de données vont être organisées sous formes de tables, et en général toutes ces tables ont une clé commune (identifiant unique) pour pouvoir intéragir ensemble.
 
-Exemple : tu as une table Users (id, firstname, lastname), et une autre Users_private_informations (id, size, age, weight).  Si tu veux savoir les données privées d'un utilisateur c'est grâce à l'id qui lui est attribué quelles seront retrouvées.
+Exemple : tu as une table Users (id, firstname, lastname), et une autre Users_private_informations (id, size, age, weight).  Si tu veux savoir les données privées d'un utilisateur c'est grâce à l'id (**Cardinalités**) qui lui est attribué quelles seront retrouvées.
 
 ## GET/POST, What's the difference ?
 
@@ -83,8 +83,30 @@ Pour en revenir à nos moutons que sont GET et PUSH, et bien ce sont tous deux d
 
 Le concept de **Migration** est là pour te permettre de *structurer et d'organiser ta base de donnée*. Mais aussi, et c'est important, *d'enregistrer tes actions* ou celles d'autres developers sur la base de données.
 
-##Les relations entre les Models des BDD
+## Les relations entre les Models des BDD
 
+Comme vu au-dessus (Cf. Les bases de données / BDD), les BDD sont associées entre elle par des **Cardinalités**.
 
+Les **Models** quant à eux ont pour rôles de contenir la données qu'on leur a demandé de contenir issue d'une table de donnée déterminée. Mais en fonctions de nos actions, nous allons être amenés à faire évoluer ce contenu en consultant des données figurant dans une autre table de données.
+
+Pour ce faire, nos **Models** vont faire appel aux **Cardinalités** ou **Associations** (à prononcer avec l'accent anglais) afin de pouvoir intéragir entre les différentes tables de données existantes.
+
+Celles-ci sont les suivantes :
+
+belongs_to
+has_one
+has_many
+has_many :through
+has_one :through
+has_and_belongs_to_many
+
+et perso je vous invite à lire la doc Ruby qui leur est relative (http://guides.rubyonrails.org/association_basics.html#the-types-of-associations)
 
 ## Les fonctions du CRUD
+On l'a vu, **CRUD** c'est l'acronyme de :
+**C** reate, qui permet de créer un nouvel enregistrement (POST:/{resources});
+**R** ead, pour afficher un ou plusieurs enregistrements, (GET:/{resources} et GET:/{resources}/:id)
+**U** pdate, pour mettre à jour un enregistrement (PUT:/{resources}/:id)
+**D** elete, pour supprimer un enregistrement (DELETE:/{resources}/:id)
+
+Ce sont donc les **4 fonctions de base pour gérer une base de données**.
