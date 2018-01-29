@@ -6,7 +6,7 @@ Bon commençons par le début :
 
 ## Quelle est la différence entre un site **statique** et un site **dynamique** ?
 
-###D'abord, c'est quoi statique ?
+### D'abord, c'est quoi statique ?
 
 Et bien comme nous l'indique le Larousse, c'est un adjectif qui nous vient du grec **statikos**, et pour reprendre la définition qui nous intéresse, *qui n'évolue pas, semble fixé de manière définitive (da viken comme disent les  bretons), par opposition à **dynamique**.*
 
@@ -16,7 +16,7 @@ Normalement, tu en connais au moins un : http://motherfuckingwebsite.com/
 
 La sainte trinité comme disait l'autre, du html, du css, et du JS.
 
-###Et donc un site dynamique ???
+### Et donc un site dynamique ???
 
 Hum ? Un petit coup de Larousse ?
 *Dynamique* : Ensemble de forces qui entraînent, provoquent un mouvement, une évolution à l'intérieur d'une structure en développement. T'y as compris ???
@@ -34,7 +34,7 @@ Si tu surf, et qui plus est en Bretagne, bzhecume c'est un peu "légende". Pourq
 
 Comme son nom l'indique, le MVC pour les intimes, c'est un motif d'architecture logicielle pour les interfaces graphique, et super cool pour les applications web !
 
-###Toujours pas ?
+### Toujours pas ?
 Ok, bon regardons de plus près.
 
 Le MVC est un motif composé de trois modules différents : **Model - View - Controller**
@@ -45,13 +45,14 @@ Et aucuns de ces trois là n'ont la même responsabilité.
 ..* Celle de **View** est de contenir la présentation de l'interface graphique (ce qui apparaît à l'écran);
 ..* Et enfin celle du **Controller** qui est de contenir la logique des actions effectuées par l'utilisateur (créer un article, le commenter, poster une vidéo, etc.)
 
-###Et ça s'articule comment ??
+### Et ça s'articule comment ??
+
 Admettons que tu souhaite te connecter au site de THP (je dis bien admettons). Pour ça il faut que tu te log, donc tu le fais, et là comme par magie, tu te mets à avoir accès aux leçons, planning, corrections et tout pis tout.
 
 Mais que s'est-il passé ?
 Quand tu t'es loggé, **Controller** a traité ton action, et l'a indiqué au **Model**. Les données du **Model** s'en sont retrouvé modifiées, car ce sont les tiennes qui s'y trouvent désormais. Aussi, ce sont elles qui sont envoyées à l'écran (**View**).
 
-##Les Routes
+## Les Routes
 
 Les Routes, c'est ce qui va permettre à ton Controller de faire ce que tu lui dis de faire.
 
@@ -67,7 +68,7 @@ Ces bases de données vont être organisées sous formes de tables, et en géné
 
 Exemple : tu as une table Users (id, firstname, lastname), et une autre Users_private_informations (id, size, age, weight).  Si tu veux savoir les données privées d'un utilisateur c'est grâce à l'id qui lui est attribué quelles seront retrouvées.
 
-##GET/POST, What's the difference ?
+## GET/POST, What's the difference ?
 
 Dans rails une *Route* dont on a déterminé les ressources (point de départ, point d'arrivée) entre des méthodes appellées verbes HTTP d'une part (en gros des requêtes qui déterminent les actions à réaliser sur une ressource donnée), et les URL d'autre part.
 
@@ -78,7 +79,7 @@ Pour en revenir à nos moutons que sont GET et PUSH, et bien ce sont tous deux d
 **GET** permet d'aller chercher de la donnée dans la base de données
 **POST** permet créer de la donnée dans la base de donnée.
 
-##Migration
+## Migration
 
 Le concept de **Migration** est là pour te permettre de *structurer et d'organiser ta base de donnée*. Mais aussi, et c'est important, *d'enregistrer tes actions* ou celles d'autres developers sur la base de données.
 
