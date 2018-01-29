@@ -21,11 +21,11 @@ La sainte trinité comme disait l'autre, du html, du css, et du JS.
 Hum ? Un petit coup de Larousse ?
 **Dynamique** : *Ensemble de forces qui entraînent, provoquent un mouvement, une évolution à l'intérieur d'une structure en développement*. T'y as compris ???
 
-Plus sérieusement, et pour reprendre ce qui as été précédemment, en opposition à un site **statique**, un site **dynamique** c'est un site évoluant en fonction de son visiteur/utilisateur. Donc pas le même accueil pour tout le monde, contenu, ou encore utilisation.
+Plus sérieusement, et pour reprendre ce qui as été dit précédemment, en opposition à un site **statique**, un site **dynamique** c'est un site évoluant en fonction de son visiteur/utilisateur. Donc pas le même accueil pour tout le monde, contenu, ou encore utilisation.
 
 Prenons un exemple, http://www.bzhecume.com/surflog/
 
-Si tu surf, et qui plus est en Bretagne, bzhecume c'est un peu "légende". Pourquoi ? Parce que sur ce site, tu vas retrouver un forum de discussions autour du surf et tout ce qui y attrait, un surf check où tu retrouveras le report du jour pour checker à distance les conditions du jour de ton spot ou bien les poster, les commenter etc., des petites annonces et patatipatata.
+Si tu surf, et qui plus est en Bretagne, bzhecume c'est un peu "légende". Pourquoi ? Parce que sur ce site, tu vas retrouver un forum de discussions autour du surf et tout ce qui y a trait, un surf check où tu retrouveras le report du jour pour checker à distance les conditions du jour de ton spot ou bien les poster, les commenter etc., des petites annonces et patatipatata.
 
 **Ce qui est important de retenir ici**, c'est que sur site, tu peux consulter toutes les pages sans t'être préalablement enregistré comme *utilisateur*. Mais que si tu le fais, et que tu te *log*, tu pourras alors toi aussi participer aux discussions, poster les photos de tes sessions, commenter un report, ou encore y vendre ta vieille combar usagée qui sent la marée :trollface:.
 
@@ -45,6 +45,8 @@ Et aucuns de ces trois là n'ont la même responsabilité.
 * La responsabilité du **Model** c'est de contenir les données à afficher;
 * Celle de **View** est de contenir la présentation de l'interface graphique (ce qui apparaît à l'écran);
 * Enfin, celle du **Controller** qui est de contenir la logique des actions effectuées par l'utilisateur (créer un article, le commenter, poster une vidéo, etc.)
+
+![MVC](MVC.jpg)
 
 ### Et ça s'articule comment ??
 
