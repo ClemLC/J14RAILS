@@ -46,7 +46,7 @@ Et aucuns de ces trois là n'ont la même responsabilité.
 * Celle de **View** est de contenir la présentation de l'interface graphique (ce qui apparaît à l'écran);
 * Enfin, celle du **Controller** qui est de contenir la logique des actions effectuées par l'utilisateur (créer un article, le commenter, poster une vidéo, etc.)
 
-![MVC](http://alexandre.ferreira1.free.fr/projet.php?projet=Autre)
+![MVC](http://alexandre.ferreira1.free.fr/img/projets/img1/photo33.jpg)
 
 ### Et ça s'articule comment ??
 
