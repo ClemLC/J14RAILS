@@ -8,42 +8,42 @@ Bon commençons par le début :
 
 ### D'abord, c'est quoi statique ?
 
-Et bien comme nous l'indique le Larousse, c'est un adjectif qui nous vient du grec **statikos**, et pour reprendre la définition qui nous intéresse, *qui n'évolue pas, semble fixé de manière définitive (da viken comme disent les  bretons), par opposition à **dynamique**.*
+Et bien comme nous l'indique le Larousse, c'est un adjectif qui nous vient du grec **statikos**, et pour reprendre la définition qui nous intéresse : *qui n'évolue pas, semble fixé de manière définitive (da viken comme disent les  bretons), par opposition à **dynamique**.*
 
-Donc un site *statique* c'est un site qui n'est pas amené à évolué, d'où que tu viennes, qui que tu sois, c'est le même accueil et c'est le même contenu.
+Donc un site **statique** c'est un site qui n'est pas amené à évolué. D'où que tu viennes, qui que tu sois, c'est le même accueil et c'est le même contenu.
 
-Normalement, tu en connais au moins un : http://motherfuckingwebsite.com/
+Normalement, t'en connais au moins un : http://motherfuckingwebsite.com/
 
 La sainte trinité comme disait l'autre, du html, du css, et du JS.
 
 ### Et donc un site dynamique ???
 
 Hum ? Un petit coup de Larousse ?
-*Dynamique* : Ensemble de forces qui entraînent, provoquent un mouvement, une évolution à l'intérieur d'une structure en développement. T'y as compris ???
+**Dynamique** : *Ensemble de forces qui entraînent, provoquent un mouvement, une évolution à l'intérieur d'une structure en développement*. T'y as compris ???
 
-Plus sérieusement, et pour reprendre ce qui as été précédemment, en opposition à un site *statique*, un site **dynamique** c'est un site évoluant en fonction de son visiteur/utilisateur. Donc pas le même accueil pour tout le monde, contenu, ou encore utilisation.
+Plus sérieusement, et pour reprendre ce qui as été précédemment, en opposition à un site **statique**, un site **dynamique** c'est un site évoluant en fonction de son visiteur/utilisateur. Donc pas le même accueil pour tout le monde, contenu, ou encore utilisation.
 
 Prenons un exemple, http://www.bzhecume.com/surflog/
 
 Si tu surf, et qui plus est en Bretagne, bzhecume c'est un peu "légende". Pourquoi ? Parce que sur ce site, tu vas retrouver un forum de discussions autour du surf et tout ce qui y attrait, un surf check où tu retrouveras le report du jour pour checker à distance les conditions du jour de ton spot ou bien les poster, les commenter etc., des petites annonces et patatipatata.
 
-**Ce qui est important de retenir ici**, c'est que sur site, tu peux consulter toutes les pages sans t'être préalablement enregistré comme *utilisateur*. Mais que si tu le fais, et que tu te *log*, tu pourras alors toi aussi participer aux discussions, poster les photos de tes sessions, commenter un report, ou encore y vendre ta vieille combar usagée qui pue la moule.
+**Ce qui est important de retenir ici**, c'est que sur site, tu peux consulter toutes les pages sans t'être préalablement enregistré comme *utilisateur*. Mais que si tu le fais, et que tu te *log*, tu pourras alors toi aussi participer aux discussions, poster les photos de tes sessions, commenter un report, ou encore y vendre ta vieille combar usagée qui sent la marée:trollface:.
 **Donc faire évoluer ce site.**
 
-## Le *Model View Controller* Késako ?
+## Le :sparkles:*Model View Controller*:sparkles: Késako ?
 
-Comme son nom l'indique, le MVC pour les intimes, c'est un motif d'architecture logicielle pour les interfaces graphique, et super cool pour les applications web !
+Comme son nom l'indique, le **MVC** pour les intimes, c'est un motif d'architecture logicielle pour les interfaces graphique, et super cool pour les applications web !
 
 ### Toujours pas ?
-Ok, bon regardons de plus près.
+Ok, bon regardons ça de plus près.
 
 Le MVC est un motif composé de trois modules différents : **Model - View - Controller**
 
 Et aucuns de ces trois là n'ont la même responsabilité.
 
-..* La responsabilité du **Model** c'est de contenir les données à afficher;
-..* Celle de **View** est de contenir la présentation de l'interface graphique (ce qui apparaît à l'écran);
-..* Et enfin celle du **Controller** qui est de contenir la logique des actions effectuées par l'utilisateur (créer un article, le commenter, poster une vidéo, etc.)
+* La responsabilité du **Model** c'est de contenir les données à afficher;
+* Celle de **View** est de contenir la présentation de l'interface graphique (ce qui apparaît à l'écran);
+* Enfin, celle du **Controller** qui est de contenir la logique des actions effectuées par l'utilisateur (créer un article, le commenter, poster une vidéo, etc.)
 
 ### Et ça s'articule comment ??
 
@@ -66,7 +66,22 @@ Mais alors où vont aller les données contenues dans le **Model**, et d'où von
 
 Ces bases de données vont être organisées sous formes de tables, et en général toutes ces tables ont une clé commune (identifiant unique) pour pouvoir intéragir ensemble.
 
-Exemple : tu as une table Users (id, firstname, lastname), et une autre Users_private_informations (id, size, age, weight).  Si tu veux savoir les données privées d'un utilisateur c'est grâce à l'id (**Cardinalités**) qui lui est attribué quelles seront retrouvées.
+Exemple : tu as une table Users (id, firstname, lastname), et une autre Users_private_informations (id, size, age, weight).  Si tu veux savoir les données privées d'un utilisateur c'est grâce à l'id qui lui est attribué quelles seront retrouvées.
+
+**Table_Users** :
+ID |firstname|lastname
+---|---------|--------
+1 |Anthony|Kerlizou
+2|Manon|Du Faouët
+
+**Table_Users_private_informations**
+ID|size|age|weight
+--|----|---|------
+1|6'2"|28|172
+2|5'6"|27|123
+
+Et donc Anthony Kerlizou, il mesure 6 pieds 2 pouces, a 28 ans, et pèse 172 livres.
+
 
 ## GET/POST, What's the difference ?
 
@@ -93,20 +108,20 @@ Pour ce faire, nos **Models** vont faire appel aux **Cardinalités** ou **Associ
 
 Celles-ci sont les suivantes :
 
-belongs_to
-has_one
-has_many
-has_many :through
-has_one :through
-has_and_belongs_to_many
+    belongs_to
+    has_one
+    has_many
+    has_many :through
+    has_one :through
+    has_and_belongs_to_many
 
-et perso je vous invite à lire la doc Ruby qui leur est relative (http://guides.rubyonrails.org/association_basics.html#the-types-of-associations)
+et perso je vous invite à lire la [doc Ruby](http://guides.rubyonrails.org/association_basics.html#the-types-of-associations) qui leur est relative.
 
 ## Les fonctions du CRUD
 On l'a vu, **CRUD** c'est l'acronyme de :
-**C** reate, qui permet de créer un nouvel enregistrement (POST:/{resources});
-**R** ead, pour afficher un ou plusieurs enregistrements, (GET:/{resources} et GET:/{resources}/:id)
-**U** pdate, pour mettre à jour un enregistrement (PUT:/{resources}/:id)
-**D** elete, pour supprimer un enregistrement (DELETE:/{resources}/:id)
+**C** reate, qui permet de créer un nouvel enregistrement (`POST:/{resources}`);
+**R** ead, pour afficher un ou plusieurs enregistrements, (`GET:/{resources}` et `GET:/{resources}/:id`)
+**U** pdate, pour mettre à jour un enregistrement (`PUT:/{resources}/:id`)
+**D** elete, pour supprimer un enregistrement (`DELETE:/{resources}/:id`)
 
 Ce sont donc les **4 fonctions de base pour gérer une base de données**.
