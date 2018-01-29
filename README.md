@@ -94,7 +94,7 @@ Dans rails une *Route* dont on a déterminé les ressources (point de départ, p
 
 Par convention, chaque action est aussi liée à une opération CRUD spécifique (*Create, Read, Update, Delete*) appliquée à la base de donnée.
 
-Pour en revenir à nos moutons que sont **GET** et **POST**, et bien ce sont tous deux des *verbes HTTP* donc des **requêtes qui déterminent des actions à réaliser sur une ressource determinée** (données de la base de de donnée).
+Pour en revenir à nos moutons que sont **GET** et **POST**, et bien ce sont tous deux des *verbes HTTP* donc des **requêtes qui déterminent des actions à réaliser sur une ressource determinée** (données de la base de données).
 
 **GET** permet d'aller chercher de la donnée dans la base de données.
 
